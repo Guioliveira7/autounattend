@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=pt-BR&Locale=pt-BR&Keyboard=00010416&GeoLocation=32&PEMode=Default&WindowsEditionMode=Generic&WindowsEdition=pro&ProcessorArchitecture=amd64&ComputerNameMode=Random&TimeZoneMode=Explicit&TimeZone=E.+South+America+Standard+Time&UserAccountMode=Unattended&AccountName0=Localadmin&AccountDisplayName0=Localadmin&AccountPassword0=Admin%40cpd&AccountGroup0=Administrators&AutoLogonMode=Own&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=HiddenSystem&ShowFileExtensions=true&ClassicContextMenu=true&LaunchToThisPC=true&ShowEndTask=true&TaskbarSearch=Box&TaskbarIconsMode=Default&DisableWidgets=true&LeftTaskbar=true&HideTaskViewButton=true&DisableBingResults=true&StartTilesMode=Default&StartPinsMode=Empty&EnableLongPaths=true&EnableRemoteDesktop=true&HardenSystemDriveAcl=true&AllowPowerShellScripts=true&DisableLastAccess=true&DisableAppSuggestions=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&DeleteWindowsOld=true&DisableAutomaticRestartSignOn=true&ProcessAudit=true&EffectsMode=Performance&DesktopIconsMode=Default&StartFoldersMode=Default&CoreIsolationMode=Enabled&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Disabled&ColorMode=Default&WallpaperMode=Default&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveNotepad=true&RemoveOneNote=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveSkype=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveWallet=true&RemoveZuneMusic=true&RemoveYourPhone=true&SystemScript0=%24out+%3D+%26+%22%24env%3Awindir%5CSystem32%5Cpowercfg.exe%22+%2FDuplicateScheme+%27e9a42b02-d5df-448d-aa00-03f14749eb61%27%3B%0D%0Aif%28+%24out+-match+%27%5Cs%28%5Ba-f0-9-%5D%7B36%7D%29%5Cs%27+%29+%7B%0D%0A++++%26+%22%24env%3Awindir%5CSystem32%5Cpowercfg.exe%22+%2FSetActive+%24Matches%5B1%5D%3B%0D%0A%7D+else+%7B%0D%0A++++%27Could+not+enable+Ultimate+Performance+power+scheme.%27+%7C+Write-Warning%3B%0D%0A%7D&SystemScriptType0=Ps1&FirstLogonScript0=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CApplications%5Cphotoviewer.dll%5Cshell%5Copen%5D%0D%0A%22MuiVerb%22%3D%22%40photoviewer.dll%2C-3043%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CApplications%5Cphotoviewer.dll%5Cshell%5Copen%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CApplications%5Cphotoviewer.dll%5Cshell%5Copen%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Bitmap%5D%0D%0A%22ImageOptionFlags%22%3Ddword%3A00000001%0D%0A%22FriendlyTypeName%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C%5C%0D%0A++00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C%5C%0D%0A++77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C%5C%0D%0A++00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C35%2C00%2C36%2C00%2C00%2C%5C%0D%0A++00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Bitmap%5CDefaultIcon%5D%0D%0A%40%3D%22%25SystemRoot%25%5C%5CSystem32%5C%5Cimageres.dll%2C-70%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Bitmap%5Cshell%5Copen%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Bitmap%5Cshell%5Copen%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CApplications%5Cphotoviewer.dll%5Cshell%5Cprint%5D%0D%0A%22NeverDefault%22%3D%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CApplications%5Cphotoviewer.dll%5Cshell%5Cprint%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CApplications%5Cphotoviewer.dll%5Cshell%5Cprint%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7B60fd46de-f830-4894-a628-6fa81bc0190d%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.JFIF%5D%0D%0A%22EditFlags%22%3Ddword%3A00010000%0D%0A%22ImageOptionFlags%22%3Ddword%3A00000001%0D%0A%22FriendlyTypeName%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C%5C%0D%0A++00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C%5C%0D%0A++77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C%5C%0D%0A++00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C35%2C00%2C35%2C00%2C00%2C%5C%0D%0A++00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.JFIF%5CDefaultIcon%5D%0D%0A%40%3D%22%25SystemRoot%25%5C%5CSystem32%5C%5Cimageres.dll%2C-72%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.JFIF%5Cshell%5Copen%5D%0D%0A%22MuiVerb%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C%5C%0D%0A++69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C%5C%0D%0A++00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C%5C%0D%0A++72%2C00%2C5c%2C00%2C70%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C76%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C%5C%0D%0A++00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C34%2C00%2C33%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.JFIF%5Cshell%5Copen%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.JFIF%5Cshell%5Copen%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Jpeg%5D%0D%0A%22EditFlags%22%3Ddword%3A00010000%0D%0A%22ImageOptionFlags%22%3Ddword%3A00000001%0D%0A%22FriendlyTypeName%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C%5C%0D%0A++00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C%5C%0D%0A++77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C%5C%0D%0A++00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C35%2C00%2C35%2C00%2C00%2C%5C%0D%0A++00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Jpeg%5CDefaultIcon%5D%0D%0A%40%3D%22%25SystemRoot%25%5C%5CSystem32%5C%5Cimageres.dll%2C-72%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Jpeg%5Cshell%5Copen%5D%0D%0A%22MuiVerb%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C%5C%0D%0A++69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C%5C%0D%0A++00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C%5C%0D%0A++72%2C00%2C5c%2C00%2C70%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C76%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C%5C%0D%0A++00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C34%2C00%2C33%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Jpeg%5Cshell%5Copen%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Jpeg%5Cshell%5Copen%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Gif%5D%0D%0A%22ImageOptionFlags%22%3Ddword%3A00000001%0D%0A%22FriendlyTypeName%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C%5C%0D%0A++00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C%5C%0D%0A++77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C%5C%0D%0A++00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C35%2C00%2C37%2C00%2C00%2C%5C%0D%0A++00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Gif%5CDefaultIcon%5D%0D%0A%40%3D%22%25SystemRoot%25%5C%5CSystem32%5C%5Cimageres.dll%2C-83%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Gif%5Cshell%5Copen%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Gif%5Cshell%5Copen%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Png%5D%0D%0A%22ImageOptionFlags%22%3Ddword%3A00000001%0D%0A%22FriendlyTypeName%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C%5C%0D%0A++00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C%5C%0D%0A++77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C%5C%0D%0A++00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C35%2C00%2C37%2C00%2C00%2C%5C%0D%0A++00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Png%5CDefaultIcon%5D%0D%0A%40%3D%22%25SystemRoot%25%5C%5CSystem32%5C%5Cimageres.dll%2C-71%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Png%5Cshell%5Copen%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Png%5Cshell%5Copen%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Wdp%5D%0D%0A%22EditFlags%22%3Ddword%3A00010000%0D%0A%22ImageOptionFlags%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Wdp%5CDefaultIcon%5D%0D%0A%40%3D%22%25SystemRoot%25%5C%5CSystem32%5C%5Cwmphoto.dll%2C-400%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Wdp%5Cshell%5Copen%5D%0D%0A%22MuiVerb%22%3Dhex%282%29%3A40%2C00%2C25%2C00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C%5C%0D%0A++69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C%5C%0D%0A++00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C%5C%0D%0A++72%2C00%2C5c%2C00%2C70%2C00%2C68%2C00%2C6f%2C00%2C74%2C00%2C6f%2C00%2C76%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C%5C%0D%0A++00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C2c%2C00%2C2d%2C00%2C33%2C00%2C30%2C00%2C34%2C00%2C33%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Wdp%5Cshell%5Copen%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CPhotoViewer.FileAssoc.Wdp%5Cshell%5Copen%5CDropTarget%5D%0D%0A%22Clsid%22%3D%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CSystemFileAssociations%5Cimage%5Cshell%5CImage+Preview%5Ccommand%5D%0D%0A%40%3Dhex%282%29%3A25%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C52%2C00%2C6f%2C00%2C6f%2C00%2C74%2C00%2C25%2C%5C%0D%0A++00%2C5c%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6d%2C00%2C33%2C00%2C32%2C00%2C5c%2C00%2C72%2C00%2C75%2C00%2C%5C%0D%0A++6e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C00%2C33%2C00%2C32%2C00%2C2e%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C20%2C00%2C22%2C00%2C25%2C%5C%0D%0A++00%2C50%2C00%2C72%2C00%2C6f%2C00%2C67%2C00%2C72%2C00%2C61%2C00%2C6d%2C00%2C46%2C00%2C69%2C00%2C6c%2C00%2C65%2C00%2C73%2C00%2C%5C%0D%0A++25%2C00%2C5c%2C00%2C57%2C00%2C69%2C00%2C6e%2C00%2C64%2C00%2C6f%2C00%2C77%2C00%2C73%2C00%2C20%2C00%2C50%2C00%2C68%2C00%2C6f%2C%5C%0D%0A++00%2C74%2C00%2C6f%2C00%2C20%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C5c%2C00%2C50%2C00%2C68%2C00%2C%5C%0D%0A++6f%2C00%2C74%2C00%2C6f%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C2e%2C00%2C64%2C00%2C6c%2C00%2C6c%2C%5C%0D%0A++00%2C22%2C00%2C2c%2C00%2C20%2C00%2C49%2C00%2C6d%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C56%2C00%2C69%2C00%2C65%2C00%2C77%2C00%2C%5C%0D%0A++5f%2C00%2C46%2C00%2C75%2C00%2C6c%2C00%2C6c%2C00%2C73%2C00%2C63%2C00%2C72%2C00%2C65%2C00%2C65%2C00%2C6e%2C00%2C20%2C00%2C25%2C%5C%0D%0A++00%2C31%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CSystemFileAssociations%5Cimage%5Cshell%5CImage+Preview%5CDropTarget%5D%0D%0A%22%7BFFE2A43C-56B9-4bf5-9A79-CC6D4285608A%7D%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows+Photo+Viewer%5CCapabilities%5D%0D%0A%22ApplicationDescription%22%3D%22%40%25ProgramFiles%25%5C%5CWindows+Photo+Viewer%5C%5Cphotoviewer.dll%2C-3069%22%0D%0A%22ApplicationName%22%3D%22%40%25ProgramFiles%25%5C%5CWindows+Photo+Viewer%5C%5Cphotoviewer.dll%2C-3009%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows+Photo+Viewer%5CCapabilities%5CFileAssociations%5D%0D%0A%22.cr2%22%3D%22PhotoViewer.FileAssoc.Tiff%22%0D%0A%22.jpg%22%3D%22PhotoViewer.FileAssoc.Jpeg%22%0D%0A%22.wdp%22%3D%22PhotoViewer.FileAssoc.Wdp%22%0D%0A%22.jfif%22%3D%22PhotoViewer.FileAssoc.JFIF%22%0D%0A%22.dib%22%3D%22PhotoViewer.FileAssoc.Bitmap%22%0D%0A%22.png%22%3D%22PhotoViewer.FileAssoc.Png%22%0D%0A%22.jxr%22%3D%22PhotoViewer.FileAssoc.Wdp%22%0D%0A%22.bmp%22%3D%22PhotoViewer.FileAssoc.Bitmap%22%0D%0A%22.jpe%22%3D%22PhotoViewer.FileAssoc.Jpeg%22%0D%0A%22.jpeg%22%3D%22PhotoViewer.FileAssoc.Jpeg%22%0D%0A%22.gif%22%3D%22PhotoViewer.FileAssoc.Gif%22%0D%0A%22.tif%22%3D%22PhotoViewer.FileAssoc.Tiff%22%0D%0A%22.tiff%22%3D%22PhotoViewer.FileAssoc.Tiff%22&FirstLogonScriptType0=Reg&FirstLogonScript1=if%28+%5BSystem.Environment%5D%3A%3AOSVersion.Version.Build+-lt+26100+%29+%7B%0D%0A++++%27This+script+requires+Windows+11+24H2+or+later.%27+%7C+Write-Warning%3B%0D%0A++++return%3B%0D%0A%7D%0D%0A%24timeout+%3D+%5Bdatetime%5D%3A%3ANow.AddMinutes%28+5+%29%3B%0D%0A%24exe+%3D+%22%24env%3ALOCALAPPDATA%5CMicrosoft%5CWindowsApps%5Cwinget.exe%22%3B%0D%0A%0D%0Awhile%28+%24true+%29+%7B%0D%0A++++if%28+%24exe+%7C+Test-Path+%29+%7B%0D%0A++++++++%26+%24exe+install+%2D%2Dexact+%2D%2Did+Mozilla.Firefox+%2D%2Dsilent+%2D%2Daccept-package-agreements+%2D%2Daccept-source-agreements+%2D%2Dsource+winget+%2D%2Dscope+machine%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A++++if%28+%5Bdatetime%5D%3A%3ANow+-gt+%24timeout+%29+%7B%0D%0A++++++++%27File+%7B0%7D+does+not+exist.%27+-f+%24exe+%7C+Write-Warning%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A++++Start-Sleep+-Seconds+1%3B%0D%0A%7D&FirstLogonScriptType1=Ps1&FirstLogonScript2=%24uri+%3D+%5Buri%5D%3A%3Anew%28+%27https%3A%2F%2Faka.ms%2Fvs%2F17%2Frelease%2Fvc_redist.x64.exe%27+%29%3B%0D%0A%24file+%3D+%22%24env%3ATEMP%5C%7B0%7D%22+-f+%24uri.Segments%5B-1%5D%3B%0D%0A%5BSystem.Net.WebClient%5D%3A%3Anew%28%29.DownloadFile%28+%24uri%2C+%24file+%29%3B%0D%0AStart-Process+-FilePath+%24file+-ArgumentList+%27%2Fquiet+%2Fnorestart%27+-Wait%3B%0D%0ARemove-Item+-LiteralPath+%24file+-ErrorAction+%27SilentlyContinue%27%3B&FirstLogonScriptType2=Ps1&FirstLogonScript3=foreach%28+%24drive+in+%5BSystem.IO.DriveInfo%5D%3A%3AGetDrives%28%29+%29+%7B%0D%0A++++if%28+%24found+%3D+Join-Path+-Path+%24drive.RootDirectory+-ChildPath+%27sources%5Csxs%27+-Resolve+-ErrorAction+%27SilentlyContinue%27+%29+%7B%0D%0A++++++++Enable-WindowsOptionalFeature+-Online+-FeatureName+%27NetFx3%27+-Source+%24found+-NoRestart%3B%0D%0A++++++++return%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%27Cannot+find+any+files+that+match+pattern.%27+%7C+Write-Warning&FirstLogonScriptType3=Ps1&AppLockerMode=Skip-->
+	<settings pass="offlineServicing"></settings>
+	<settings pass="windowsPE">
+		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<UILanguage>pt-BR</UILanguage>
+		</component>
+		<component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<UserData>
+				<ProductKey>
+					<Key>VK7JG-NPHTM-C97JM-9MPGT-3V66T</Key>
+					<WillShowUI>OnError</WillShowUI>
+				</ProductKey>
+				<AcceptEula>true</AcceptEula>
+			</UserData>
+			<UseConfigurationSet>false</UseConfigurationSet>
+		</component>
+	</settings>
+	<settings pass="generalize"></settings>
+	<settings pass="specialize">
+		<component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<RunSynchronous>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -NoProfile -Command "$xml = [xml]::new(); $xml.Load('C:\Windows\Panther\unattend.xml'); $sb = [scriptblock]::Create( $xml.unattend.Extensions.ExtractScript ); Invoke-Command -ScriptBlock $sb -ArgumentList $xml;"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>2</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\Specialize.ps1"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>3</Order>
+					<Path>reg.exe load "HKU\DefaultUser" "C:\Users\Default\NTUSER.DAT"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>4</Order>
+					<Path>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\DefaultUser.ps1"</Path>
+				</RunSynchronousCommand>
+				<RunSynchronousCommand wcm:action="add">
+					<Order>5</Order>
+					<Path>reg.exe unload "HKU\DefaultUser"</Path>
+				</RunSynchronousCommand>
+			</RunSynchronous>
+		</component>
+		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<TimeZone>E. South America Standard Time</TimeZone>
+		</component>
+	</settings>
+	<settings pass="auditSystem"></settings>
+	<settings pass="auditUser"></settings>
+	<settings pass="oobeSystem">
+		<component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<InputLocale>0416:00010416</InputLocale>
+			<SystemLocale>pt-BR</SystemLocale>
+			<UILanguage>pt-BR</UILanguage>
+			<UserLocale>pt-BR</UserLocale>
+		</component>
+		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+			<UserAccounts>
+				<LocalAccounts>
+					<LocalAccount wcm:action="add">
+						<Name>User</Name>
+						<DisplayName>User</DisplayName>
+						<Group>Administrators</Group>
+						<Password>
+							<Value></Value>
+							<PlainText>true</PlainText>
+						</Password>
+					</LocalAccount>
+				</LocalAccounts>
+			</UserAccounts>
+			<AutoLogon>
+				<Username>User</Username>
+				<Enabled>true</Enabled>
+				<LogonCount>1</LogonCount>
+				<Password>
+					<Value></Value>
+					<PlainText>true</PlainText>
+				</Password>
+			</AutoLogon>
+			<OOBE>
+				<ProtectYourPC>3</ProtectYourPC>
+				<HideEULAPage>true</HideEULAPage>
+				<HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+				<HideOnlineAccountScreens>false</HideOnlineAccountScreens>
+			</OOBE>
+			<FirstLogonCommands>
+				<SynchronousCommand wcm:action="add">
+					<Order>1</Order>
+					<CommandLine>powershell.exe -WindowStyle "Normal" -ExecutionPolicy "Unrestricted" -NoProfile -File "C:\Windows\Setup\Scripts\FirstLogon.ps1"</CommandLine>
+				</SynchronousCommand>
+			</FirstLogonCommands>
+		</component>
+	</settings>
+	<Extensions xmlns="https://schneegans.de/windows/unattend-generator/">
+		<Build>
+			<Commit>
+				<Hash>538f930aeea9c3d51fdd0b4822e2d076fef999e8</Hash>
+				<GitHubUrl>https://github.com/cschneegans/unattend-generator/commit/538f930aeea9c3d51fdd0b4822e2d076fef999e8</GitHubUrl>
+			</Commit>
+		</Build>
+		<ExtractScript>
+param(
+    [xml] $Document
+);
+
+foreach( $file in $Document.unattend.Extensions.File ) {
+    $path = [System.Environment]::ExpandEnvironmentVariables( $file.GetAttribute( 'path' ) );
+    mkdir -Path( $path | Split-Path -Parent ) -ErrorAction 'SilentlyContinue';
+    $encoding = switch( [System.IO.Path]::GetExtension( $path ) ) {
+        { $_ -in '.ps1', '.xml' } { [System.Text.Encoding]::UTF8; }
+        { $_ -in '.reg', '.vbs', '.js' } { [System.Text.UnicodeEncoding]::new( $false, $true ); }
+        default { [System.Text.Encoding]::Default; }
+    };
+    $bytes = $encoding.GetPreamble() + $encoding.GetBytes( $file.InnerText.Trim() );
+    [System.IO.File]::WriteAllBytes( $path, $bytes );
+}
+		</ExtractScript>
+		<File path="C:\Windows\Setup\Scripts\RemovePackage.ps1">
+$selectors = @(
+	'Microsoft.Microsoft3DViewer';
+	'Microsoft.BingSearch';
+	'Clipchamp.Clipchamp';
+	'Microsoft.Copilot';
+	'Microsoft.549981C3F5F10';
+	'Microsoft.Windows.DevHome';
+	'MicrosoftCorporationII.MicrosoftFamily';
+	'Microsoft.WindowsFeedbackHub';
+	'Microsoft.GetHelp';
+	'Microsoft.Getstarted';
+	'microsoft.windowscommunicationsapps';
+	'Microsoft.WindowsMaps';
+	'Microsoft.MixedReality.Portal';
+	'Microsoft.BingNews';
+	'Microsoft.WindowsNotepad';
+	'Microsoft.Office.OneNote';
+	'Microsoft.OutlookForWindows';
+	'Microsoft.MSPaint';
+	'Microsoft.People';
+	'MicrosoftCorporationII.QuickAssist';
+	'Microsoft.SkypeApp';
+	'Microsoft.MicrosoftSolitaireCollection';
+	'MicrosoftTeams';
+	'MSTeams';
+	'Microsoft.Todos';
+	'Microsoft.Wallet';
+	'Microsoft.YourPhone';
+	'Microsoft.ZuneMusic';
+	'Microsoft.ZuneVideo';
+);
+$getCommand = {
+  Get-AppxProvisionedPackage -Online;
+};
+$filterCommand = {
+  $_.DisplayName -eq $selector;
+};
+$removeCommand = {
+  [CmdletBinding()]
+  param(
+    [Parameter( Mandatory, ValueFromPipeline )]
+    $InputObject
+  );
+  process {
+    $InputObject | Remove-AppxProvisionedPackage -AllUsers -Online -ErrorAction 'Continue';
+  }
+};
+$type = 'Package';
+$installed = &amp; $getCommand;
+foreach( $selector in $selectors ) {
+	$result = [ordered] @{
+		Selector = $selector;
+	};
+	if( $found = $installed | Where-Object -FilterScript $filterCommand ) {
+		$result.Output = $found | &amp; $removeCommand;
+		if( $? ) {
+			$result.Message = "${type} removed.";
+		} else {
+			$result.Message = "${type} not removed.";
+			$result.Error = $Error[0];
+		}
+	} else {
+		$result.Message = "${type} not installed.";
+	}
+	$result | ConvertTo-Json -Depth 3 -Compress;
+}
+		</File>
+		<File path="C:\Windows\Setup\Scripts\RemoveCapability.ps1">
+$selectors = @(
+	'Language.Handwriting';
+	'MathRecognizer';
+	'App.Support.QuickAssist';
+	'Language.Speech';
+	'Language.TextToSpeech';
+	'App.StepsRecorder';
+	'Hello.Face.18967';
+	'Hello.Face.Migration.18967';
+	'Hello.Face.20134';
+);
+$getCommand = {
+  Get-WindowsCapability -Online | Where-Object -Property 'State' -NotIn -Value @(
+    'NotPresent';
+    'Removed';
+  );
+};
+$filterCommand = {
+  ($_.Name -split '~')[0] -eq $selector;
+};
+$removeCommand = {
+  [CmdletBinding()]
+  param(
+    [Parameter( Mandatory, ValueFromPipeline )]
+    $InputObject
+  );
+  process {
+    $InputObject | Remove-WindowsCapability -Online -ErrorAction 'Continue';
+  }
+};
+$type = 'Capability';
+$installed = &amp; $getCommand;
+foreach( $selector in $selectors ) {
+	$result = [ordered] @{
+		Selector = $selector;
+	};
+	if( $found = $installed | Where-Object -FilterScript $filterCommand ) {
+		$result.Output = $found | &amp; $removeCommand;
+		if( $? ) {
+			$result.Message = "${type} removed.";
+		} else {
+			$result.Message = "${type} not removed.";
+			$result.Error = $Error[0];
+		}
+	} else {
+		$result.Message = "${type} not installed.";
+	}
+	$result | ConvertTo-Json -Depth 3 -Compress;
+}
+		</File>
+		<File path="C:\Windows\Setup\Scripts\RemoveFeature.ps1">
+$selectors = @(
+	'Recall';
+);
+$getCommand = {
+  Get-WindowsOptionalFeature -Online | Where-Object -Property 'State' -NotIn -Value @(
+    'Disabled';
+    'DisabledWithPayloadRemoved';
+  );
+};
+$filterCommand = {
+  $_.FeatureName -eq $selector;
+};
+$removeCommand = {
+  [CmdletBinding()]
+  param(
+    [Parameter( Mandatory, ValueFromPipeline )]
+    $InputObject
+  );
+  process {
+    $InputObject | Disable-WindowsOptionalFeature -Online -Remove -NoRestart -ErrorAction 'Continue';
+  }
+};
+$type = 'Feature';
+$installed = &amp; $getCommand;
+foreach( $selector in $selectors ) {
+	$result = [ordered] @{
+		Selector = $selector;
+	};
+	if( $found = $installed | Where-Object -FilterScript $filterCommand ) {
+		$result.Output = $found | &amp; $removeCommand;
+		if( $? ) {
+			$result.Message = "${type} removed.";
+		} else {
+			$result.Message = "${type} not removed.";
+			$result.Error = $Error[0];
+		}
+	} else {
+		$result.Message = "${type} not installed.";
+	}
+	$result | ConvertTo-Json -Depth 3 -Compress;
+}
+		</File>
+		<File path="C:\Windows\Setup\Scripts\SetStartPins.ps1">
+$json = '{"pinnedList":[]}';
+if( [System.Environment]::OSVersion.Version.Build -lt 20000 ) {
+	return;
+}
+$key = 'Registry::HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start';
+New-Item -Path $key -ItemType 'Directory' -ErrorAction 'SilentlyContinue';
+Set-ItemProperty -LiteralPath $key -Name 'ConfigureStartPins' -Value $json -Type 'String';
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-01.ps1">
+$out = &amp; "$env:windir\System32\powercfg.exe" /DuplicateScheme 'e9a42b02-d5df-448d-aa00-03f14749eb61';
+if( $out -match '\s([a-f0-9-]{36})\s' ) {
+    &amp; "$env:windir\System32\powercfg.exe" /SetActive $Matches[1];
+} else {
+    'Could not enable Ultimate Performance power scheme.' | Write-Warning;
+}
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-02.reg">
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open]
+"MuiVerb"="@photoviewer.dll,-3043"
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Bitmap]
+"ImageOptionFlags"=dword:00000001
+"FriendlyTypeName"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,\
+  00,46,00,69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,\
+  77,00,73,00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,\
+  00,65,00,72,00,5c,00,50,00,68,00,6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,\
+  65,00,72,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,35,00,36,00,00,\
+  00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Bitmap\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,-70"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Bitmap\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Bitmap\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print]
+"NeverDefault"=""
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\Applications\photoviewer.dll\shell\print\DropTarget]
+"Clsid"="{60fd46de-f830-4894-a628-6fa81bc0190d}"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.JFIF]
+"EditFlags"=dword:00010000
+"ImageOptionFlags"=dword:00000001
+"FriendlyTypeName"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,\
+  00,46,00,69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,\
+  77,00,73,00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,\
+  00,65,00,72,00,5c,00,50,00,68,00,6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,\
+  65,00,72,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,35,00,35,00,00,\
+  00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.JFIF\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,-72"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.JFIF\shell\open]
+"MuiVerb"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,\
+  69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,\
+  00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,\
+  72,00,5c,00,70,00,68,00,6f,00,74,00,6f,00,76,00,69,00,65,00,77,00,65,00,72,\
+  00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,34,00,33,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.JFIF\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.JFIF\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg]
+"EditFlags"=dword:00010000
+"ImageOptionFlags"=dword:00000001
+"FriendlyTypeName"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,\
+  00,46,00,69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,\
+  77,00,73,00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,\
+  00,65,00,72,00,5c,00,50,00,68,00,6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,\
+  65,00,72,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,35,00,35,00,00,\
+  00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,-72"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg\shell\open]
+"MuiVerb"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,\
+  69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,\
+  00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,\
+  72,00,5c,00,70,00,68,00,6f,00,74,00,6f,00,76,00,69,00,65,00,77,00,65,00,72,\
+  00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,34,00,33,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Jpeg\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Gif]
+"ImageOptionFlags"=dword:00000001
+"FriendlyTypeName"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,\
+  00,46,00,69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,\
+  77,00,73,00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,\
+  00,65,00,72,00,5c,00,50,00,68,00,6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,\
+  65,00,72,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,35,00,37,00,00,\
+  00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Gif\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,-83"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Gif\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Gif\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Png]
+"ImageOptionFlags"=dword:00000001
+"FriendlyTypeName"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,\
+  00,46,00,69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,\
+  77,00,73,00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,\
+  00,65,00,72,00,5c,00,50,00,68,00,6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,\
+  65,00,72,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,35,00,37,00,00,\
+  00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Png\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,-71"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Png\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Png\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Wdp]
+"EditFlags"=dword:00010000
+"ImageOptionFlags"=dword:00000001
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Wdp\DefaultIcon]
+@="%SystemRoot%\\System32\\wmphoto.dll,-400"
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Wdp\shell\open]
+"MuiVerb"=hex(2):40,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,\
+  69,00,6c,00,65,00,73,00,25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,\
+  00,20,00,50,00,68,00,6f,00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,\
+  72,00,5c,00,70,00,68,00,6f,00,74,00,6f,00,76,00,69,00,65,00,77,00,65,00,72,\
+  00,2e,00,64,00,6c,00,6c,00,2c,00,2d,00,33,00,30,00,34,00,33,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Wdp\shell\open\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\PhotoViewer.FileAssoc.Wdp\shell\open\DropTarget]
+"Clsid"="{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\Image Preview\command]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,\
+  6e,00,64,00,6c,00,6c,00,33,00,32,00,2e,00,65,00,78,00,65,00,20,00,22,00,25,\
+  00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,\
+  25,00,5c,00,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,20,00,50,00,68,00,6f,\
+  00,74,00,6f,00,20,00,56,00,69,00,65,00,77,00,65,00,72,00,5c,00,50,00,68,00,\
+  6f,00,74,00,6f,00,56,00,69,00,65,00,77,00,65,00,72,00,2e,00,64,00,6c,00,6c,\
+  00,22,00,2c,00,20,00,49,00,6d,00,61,00,67,00,65,00,56,00,69,00,65,00,77,00,\
+  5f,00,46,00,75,00,6c,00,6c,00,73,00,63,00,72,00,65,00,65,00,6e,00,20,00,25,\
+  00,31,00,00,00
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\image\shell\Image Preview\DropTarget]
+"{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities]
+"ApplicationDescription"="@%ProgramFiles%\\Windows Photo Viewer\\photoviewer.dll,-3069"
+"ApplicationName"="@%ProgramFiles%\\Windows Photo Viewer\\photoviewer.dll,-3009"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Photo Viewer\Capabilities\FileAssociations]
+".cr2"="PhotoViewer.FileAssoc.Tiff"
+".jpg"="PhotoViewer.FileAssoc.Jpeg"
+".wdp"="PhotoViewer.FileAssoc.Wdp"
+".jfif"="PhotoViewer.FileAssoc.JFIF"
+".dib"="PhotoViewer.FileAssoc.Bitmap"
+".png"="PhotoViewer.FileAssoc.Png"
+".jxr"="PhotoViewer.FileAssoc.Wdp"
+".bmp"="PhotoViewer.FileAssoc.Bitmap"
+".jpe"="PhotoViewer.FileAssoc.Jpeg"
+".jpeg"="PhotoViewer.FileAssoc.Jpeg"
+".gif"="PhotoViewer.FileAssoc.Gif"
+".tif"="PhotoViewer.FileAssoc.Tiff"
+".tiff"="PhotoViewer.FileAssoc.Tiff"
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-03.ps1">
+if( [System.Environment]::OSVersion.Version.Build -lt 26100 ) {
+    'This script requires Windows 11 24H2 or later.' | Write-Warning;
+    return;
+}
+$timeout = [datetime]::Now.AddMinutes( 5 );
+$exe = "$env:LOCALAPPDATA\Microsoft\WindowsApps\winget.exe";
+
+while( $true ) {
+    if( $exe | Test-Path ) {
+        &amp; $exe install --exact --id Mozilla.Firefox --silent --accept-package-agreements --accept-source-agreements --source winget --scope machine;
+        return;
+    }
+    if( [datetime]::Now -gt $timeout ) {
+        'File {0} does not exist.' -f $exe | Write-Warning;
+        return;
+    }
+    Start-Sleep -Seconds 1;
+}
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-04.ps1">
+$uri = [uri]::new( 'https://aka.ms/vs/17/release/vc_redist.x64.exe' );
+$file = "$env:TEMP\{0}" -f $uri.Segments[-1];
+[System.Net.WebClient]::new().DownloadFile( $uri, $file );
+Start-Process -FilePath $file -ArgumentList '/quiet /norestart' -Wait;
+Remove-Item -LiteralPath $file -ErrorAction 'SilentlyContinue';
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-05.ps1">
+foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
+    if( $found = Join-Path -Path $drive.RootDirectory -ChildPath 'sources\sxs' -Resolve -ErrorAction 'SilentlyContinue' ) {
+        Enable-WindowsOptionalFeature -Online -FeatureName 'NetFx3' -Source $found -NoRestart;
+        return;
+    }
+}
+'Cannot find any files that match pattern.' | Write-Warning
+		</File>
+		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
+$scripts = @(
+	{
+		Remove-Item -LiteralPath 'Registry::HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\DevHomeUpdate' -Force -ErrorAction 'SilentlyContinue';
+	};
+	{
+		reg.exe add "HKCR\.txt\ShellNew" /v ItemName /t REG_EXPAND_SZ /d "@C:\Windows\system32\notepad.exe,-470" /f;
+		reg.exe add "HKCR\.txt\ShellNew" /v NullFile /t REG_SZ /f;
+		reg.exe add "HKCR\txtfilelegacy" /v FriendlyTypeName /t REG_EXPAND_SZ /d "@C:\Windows\system32\notepad.exe,-469" /f;
+		reg.exe add "HKCR\txtfilelegacy" /ve /t REG_SZ /d "Text Document" /f;
+	};
+	{
+		Remove-Item -LiteralPath 'Registry::HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\OutlookUpdate' -Force -ErrorAction 'SilentlyContinue';
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Communications" /v ConfigureChatAutoInstall /t REG_DWORD /d 0 /f;
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\RemovePackage.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\RemoveCapability.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\RemoveFeature.ps1';
+	};
+	{
+		net.exe accounts /maxpwage:UNLIMITED;
+	};
+	{
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
+	};
+	{
+		netsh.exe advfirewall firewall set rule group="@FirewallAPI.dll,-28752" new enable=Yes;
+		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f;
+	};
+	{
+		icacls.exe C:\ /remove:g "*S-1-5-11"
+	};
+	{
+		auditpol.exe /set /subcategory:"{0CCE922B-69AE-11D9-BED3-505054503030}" /success:enable /failure:enable;
+	};
+	{
+		Set-ExecutionPolicy -Scope 'LocalMachine' -ExecutionPolicy 'RemoteSigned' -Force;
+	};
+	{
+		fsutil.exe behavior set disableLastAccess 1;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\Dsh" /v AllowNewsAndInterests /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Edge" /v HideFirstRunExperience /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\Software\Policies\Microsoft\Edge\Recommended" /v BackgroundModeEnabled /t REG_DWORD /d 0 /f;
+		reg.exe add "HKLM\Software\Policies\Microsoft\Edge\Recommended" /v StartupBoostEnabled /t REG_DWORD /d 0 /f;
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\SetStartPins.ps1';
+	};
+	{
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ControlAnimations" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\AnimateMinMax" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\TaskbarAnimations" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\DWMAeroPeekEnabled" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\MenuAnimation" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\TooltipAnimation" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\SelectionFade" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\DWMSaveThumbnailEnabled" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\CursorShadow" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ListviewShadow" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ThumbnailsOrIcon" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ListviewAlphaSelect" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\DragFullWindows" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ComboBoxAnimation" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\FontSmoothing" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\ListBoxSmoothScrolling" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+		Set-ItemProperty -LiteralPath "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects\DropShadow" -Name 'DefaultValue' -Value 0 -Type 'DWord' -Force;
+	};
+	{
+		reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\StickyKeys" /v Flags /t REG_SZ /d 10 /f;
+	};
+	{
+		  reg.exe add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v "DisableAutomaticRestartSignOn" /t REG_DWORD /d 1 /f;
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-01.ps1';
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to customize your Windows installation. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\Specialize.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\UserOnce.ps1">
+$scripts = @(
+	{
+		Get-AppxPackage -Name 'Microsoft.Windows.Ai.Copilot.Provider' | Remove-AppxPackage;
+	};
+	{
+		reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /ve /f;
+	};
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'LaunchTo' -Type 'DWord' -Value 1;
+	};
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects' -Name 'VisualFXSetting' -Type 'DWord' -Value 2 -Force;
+	};
+	{
+		Get-Process -Name 'explorer' -ErrorAction 'SilentlyContinue' | Where-Object -FilterScript {
+			$_.SessionId -eq ( Get-Process -Id $PID ).SessionId;
+		} | Stop-Process -Force;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to configure this user account. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "$env:TEMP\UserOnce.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\DefaultUser.ps1">
+$scripts = @(
+	{
+		reg.exe add "HKU\DefaultUser\Software\Policies\Microsoft\Windows\WindowsCopilot" /v TurnOffWindowsCopilot /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Notepad" /v ShowStoreBanner /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Hidden" /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v ShowTaskViewButton /t REG_DWORD /d 0 /f;
+	};
+	{
+		$names = @(
+		  'ContentDeliveryAllowed';
+		  'FeatureManagementEnabled';
+		  'OEMPreInstalledAppsEnabled';
+		  'PreInstalledAppsEnabled';
+		  'PreInstalledAppsEverEnabled';
+		  'SilentInstalledAppsEnabled';
+		  'SoftLandingEnabled';
+		  'SubscribedContentEnabled';
+		  'SubscribedContent-310093Enabled';
+		  'SubscribedContent-338387Enabled';
+		  'SubscribedContent-338388Enabled';
+		  'SubscribedContent-338389Enabled';
+		  'SubscribedContent-338393Enabled';
+		  'SubscribedContent-353694Enabled';
+		  'SubscribedContent-353696Enabled';
+		  'SubscribedContent-353698Enabled';
+		  'SystemPaneSuggestionsEnabled';
+		);
+		
+		foreach( $name in $names ) {
+		  reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v $name /t REG_DWORD /d 0 /f;
+		}
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarAl /t REG_DWORD /d 0 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Policies\Microsoft\Windows\Explorer" /v DisableSearchBoxSuggestions /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDeveloperSettings" /v TaskbarEndTask /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Control Panel\Accessibility\StickyKeys" /v Flags /t REG_SZ /d 10 /f;
+	};
+	{
+		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\RunOnce" /v "UnattendedSetup" /t REG_SZ /d "powershell.exe -WindowStyle \""Normal\"" -ExecutionPolicy \""Unrestricted\"" -NoProfile -File \""C:\Windows\Setup\Scripts\UserOnce.ps1\""" /f;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to modify the default user&#x2019;&#x2019;s registry hive. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\DefaultUser.log";
+		</File>
+		<File path="C:\Windows\Setup\Scripts\FirstLogon.ps1">
+$scripts = @(
+	{
+		Set-ItemProperty -LiteralPath 'Registry::HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -Name 'AutoLogonCount' -Type 'DWord' -Force -Value 0;
+	};
+	{
+		cmd.exe /c "rmdir C:\Windows.old";
+	};
+	{
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-02.reg";
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-03.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-04.ps1';
+	};
+	{
+		&amp; 'C:\Windows\Setup\Scripts\unattend-05.ps1';
+	};
+	{
+		Remove-Item -LiteralPath @(
+		  'C:\Windows\Panther\unattend.xml';
+		  'C:\Windows\Panther\unattend-original.xml';
+		  'C:\Windows\Setup\Scripts\Wifi.xml';
+		) -Force -ErrorAction 'SilentlyContinue' -Verbose;
+	};
+);
+
+&amp; {
+  [float] $complete = 0;
+  [float] $increment = 100 / $scripts.Count;
+  foreach( $script in $scripts ) {
+    Write-Progress -Id 0 -Activity 'Running scripts to finalize your Windows installation. Do not close this window.' -PercentComplete $complete;
+    '*** Will now execute command &#xAB;{0}&#xBB;.' -f $(
+      $script.ToString().Trim() -replace '\s+', ' ' -replace '^(.{99})(.+)$', '$1&#x2026;';
+    );
+    $start = [datetime]::Now;
+    &amp; $script;
+    '*** Finished executing command after {0:0} ms.' -f [datetime]::Now.Subtract( $start ).TotalMilliseconds;
+    "`r`n" * 3;
+    $complete += $increment;
+  }
+} *&gt;&amp;1 | Out-String -Width 1KB -Stream &gt;&gt; "C:\Windows\Setup\Scripts\FirstLogon.log";
+		</File>
+	</Extensions>
+</unattend>
